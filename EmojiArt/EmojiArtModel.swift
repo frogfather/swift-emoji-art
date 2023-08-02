@@ -3,7 +3,7 @@
 //  EmojiArt
 //
 //  Created by John Campbell on 01/08/2023.
-//
+//  This is the model
 
 import Foundation
 
@@ -13,8 +13,8 @@ struct EmojiArtModel {
     
     struct Emoji: Identifiable, Hashable {
         let text: String
-        var x: Int
-        var y: Int
+        var x: Int // Offset from centre
+        var y: Int // Offset from centre
         var size: Int
         let id: Int
         
