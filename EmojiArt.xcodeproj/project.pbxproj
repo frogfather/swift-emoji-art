@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		52AD33222A7BC637005DCCF0 /* UtilityViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AD33212A7BC637005DCCF0 /* UtilityViews.swift */; };
 		52CCA2FC2A796E2000CFD40A /* UtilityExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CCA2FB2A796E2000CFD40A /* UtilityExtensions.swift */; };
 		52DCCD792A7910ED00276574 /* EmojiArtApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DCCD782A7910ED00276574 /* EmojiArtApp.swift */; };
 		52DCCD7B2A7910ED00276574 /* EmojiArtDocumentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DCCD7A2A7910ED00276574 /* EmojiArtDocumentView.swift */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		52AD33212A7BC637005DCCF0 /* UtilityViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilityViews.swift; sourceTree = "<group>"; };
 		52CCA2FB2A796E2000CFD40A /* UtilityExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilityExtensions.swift; sourceTree = "<group>"; };
 		52DCCD752A7910ED00276574 /* EmojiArt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmojiArt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52DCCD782A7910ED00276574 /* EmojiArtApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiArtApp.swift; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 				52DCCDA42A7914E400276574 /* EmojiArtModel.Background.swift */,
 				52DCCD7C2A7910EF00276574 /* Assets.xcassets */,
 				52DCCD7E2A7910EF00276574 /* Preview Content */,
+				52AD33212A7BC637005DCCF0 /* UtilityViews.swift */,
 			);
 			path = EmojiArt;
 			sourceTree = "<group>";
@@ -269,6 +272,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52AD33222A7BC637005DCCF0 /* UtilityViews.swift in Sources */,
 				52DCCD7B2A7910ED00276574 /* EmojiArtDocumentView.swift in Sources */,
 				52DCCD792A7910ED00276574 /* EmojiArtApp.swift in Sources */,
 				52CCA2FC2A796E2000CFD40A /* UtilityExtensions.swift in Sources */,

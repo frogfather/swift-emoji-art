@@ -9,7 +9,7 @@ import Foundation
 
 extension EmojiArtModel {
     
-    enum Background {
+    enum Background: Equatable {
         case blank
         case url(URL) // Url generally an http url
         case imageData(Data) //Data is a byte buffer
