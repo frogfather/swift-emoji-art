@@ -56,7 +56,6 @@ struct EmojiArtDocumentView: View {
     private func drop(providers: [NSItemProvider], at location: CGPoint, in geometry: GeometryProxy) -> Bool {
         var found = providers.loadObjects(ofType: URL.self) { url in
             document.setBackground(EmojiArtModel.Background.url(url.imageURL))
-            
         }
         if !found {
             found = providers.loadObjects(ofType: UIImage.self) { image in
@@ -103,7 +102,7 @@ struct EmojiArtDocumentView: View {
         CGFloat(emoji.size)
     }
     
-    //Panning (moving things around
+    //Panning (moving things around)
     @State private var steadyStatePanOffset: CGSize = CGSize.zero
     @GestureState private var gesturePanOffset: CGSize = CGSize.zero
     
@@ -111,6 +110,8 @@ struct EmojiArtDocumentView: View {
         (steadyStatePanOffset + gesturePanOffset) * zoomScale
     }
     
+    //Gestures have events such as onEnded and updating which allow us to take
+    //action during the gesture and when it's finished
     private func panGesture() -> some Gesture {
         DragGesture()
             .updating($gesturePanOffset) { latestDragGestureValue, gesturePanOffset, transaction in
@@ -129,8 +130,7 @@ struct EmojiArtDocumentView: View {
         steadyStateZoomScale * gestureZoomScale
     }
    
-    //gestureZoomScale here is an in-out parameter and is the ONLY place the zoom scale can be changed during the
-    //gesture
+    //gestureZoomScale here is an in-out parameter and is the ONLY place the zoom scale can be changed during the gesture
     private func zoomGesture() -> some Gesture {
         MagnificationGesture()
             .updating($gestureZoomScale) { latestGestureScale, gestureZoomScale, transaction in
